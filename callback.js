@@ -62,3 +62,23 @@ myArr.sort((val1, val2) => {
 });
 
 console.log(myArr);
+
+
+
+// sorting KEYS of an OBJECT according to VALUES
+
+function inBetween(start_word,end_word,word){
+    listSort = {
+        start_word,
+        end_word,
+        word
+    };
+    // sorted_obj = Object.entries(listSort).sort((a, b) => a[1]>b[1]?1:-1);
+    sorted_obj = Object.keys(listSort).sort((a, b) => listSort[a]>listSort[b]?1:-1);
+    return sorted_obj[1] === 'word' ? true : false;
+}
+
+
+console.log(inBetween("bookend", "boolean", "boost"))
+console.log(inBetween("monk", "monument", "monkey"))
+console.log(inBetween("apple", "banana", "azure"))
