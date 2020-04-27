@@ -1,0 +1,3 @@
+[submodule "edabit-javascript-challenges"]
+	path = edabit-javascript-challenges
+	url = https://github.com/anik-ghosh-au7/edabit-javascript-challenges.git
