@@ -50,10 +50,13 @@ let Employee_P = function(name, id, salary){
 
 // Substitute of extends
 Object.setPrototypeOf(Employee_P, Person_P.prototype);
+Employee_P.prototype = Object.create(Person_P.prototype);
+// Object.getPrototypeOf(Person_P, Employee_P.prototype);
 Employee_P.prototype.employeeInfo = function(){
     return `${this.name} :: ${this.id} :: ${this.salary}`;
 };
 
 let dutta = new Employee_P('Dutta', 1010, 9000000);
 console.log(dutta.employeeInfo());
+console.log(dutta.getDeatils());
 
