@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Players Database</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid" style="margin: auto;">
+<div class="container">
+  <h2>List of Players : </h2>
+  <p>Details of all the players :- </p>            
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+        {{#each players}}
+      <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.country}}</td>
+      </tr>
+        {{/each}}
+    </tbody>
+  </table>
+  {{#unless players}}
+    <div class="alert alert-danger">
+        List is empty!!!!
+    </div>
+{{/unless}}
+<div class="container">
+<p>
+<form action="/" method="GET"><input type="submit" class="btn btn-primary btn-lg" value="Home"></form>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
