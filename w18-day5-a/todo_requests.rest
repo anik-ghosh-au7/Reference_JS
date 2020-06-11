@@ -1,0 +1,52 @@
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/all
+
+###
+
+GET http://localhost:3000/one/5edbb229e62b6b64f75603a3
+
+###
+
+POST http://localhost:3000/create
+Content-Type: application/json
+
+{
+    "todo": "watch movie",
+    "username": "AnikGhosh"
+}
+
+###
+
+POST http://localhost:3000/create
+Content-Type: application/json
+
+{
+    "todo": "watch series",
+    "username": "AnikGhosh"
+}
+
+###
+
+POST http://localhost:3000/create
+Content-Type: application/json
+
+{
+    "todo": "watch youtube",
+    "username": "GhoshAnik"
+}
+
+###
+
+PATCH http://localhost:3000/update/5edbb229e62b6b64f75603a3
+Content-Type: application/json
+
+{
+    "todo": "watch youtube"
+}
+
+###
+
+DELETE http://localhost:3000/delete/5edbb229e62b6b64f75603a3
