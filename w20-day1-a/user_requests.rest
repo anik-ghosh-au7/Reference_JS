@@ -1,0 +1,88 @@
+GET http://localhost:3000/login
+
+###
+
+GET http://localhost:3000/users/user
+Content-Type: application/json
+
+{
+    "username": "AnikGhosh",
+    "password": "HelloWorld"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/x-www-form-urlencoded
+
+{
+    "username": "anik",
+    "password": "ghosh"
+}
+
+###
+
+POST http://localhost:3000/users/createuser
+Content-Type: application/json
+
+{
+    "username": "GhoshAnik",
+    "password": "WorldHello"
+}
+
+###
+
+PATCH http://localhost:3000/users/updateuser/5edd25394477727f2e2faadd
+Content-Type: application/json
+
+{
+    "username": "HannaGhosh",
+    "password": "WorldHello"
+}
+
+###
+
+DELETE http://localhost:3000/users/deleteuser
+Content-Type: application/json
+
+{
+    "username": "GhoshAnik",
+    "password": "WorldHello"
+}
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "username": "AnikGhosh",
+    "password": "HelloWorld"
+}
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "username": "GhoshAnik",
+    "password": "WorldHello"
+}
+
+###
+
+POST http://localhost:3000/users/getposts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW5pa0dob3NoIiwiaWF0IjoxNTkxNjI3NjEwfQ.1AedHXRefSMI72aTurC34B3JnTsLAVo88474d-iZ1hI
+
+
+###
+
+POST http://localhost:3000/users/getposts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW5pa0dob3NoIiwiaWF0IjoxNTkxNjI4MjM1fQ.oh9U3JFb4S9u45mtL9tqn2AfIlncdMAUZHwA0gs-bh4
+
+
+###
+
+POST http://localhost:3000/users/getposts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2hvc2hBbmlrIiwiaWF0IjoxNTkxNjI4MTgwfQ.q-cd58Y4i5dk2S9bntuCoRRRg6cdBWqyeNBNON-U2mY
