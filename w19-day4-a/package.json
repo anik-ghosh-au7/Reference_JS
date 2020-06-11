@@ -1,0 +1,27 @@
+{
+  "name": "w19-day4-a",
+  "version": "1.0.0",
+  "description": "week 19 day 4 assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node index.js",
+    "dev": "nodemon --exec babel-node index.js"
+  },
+  "author": "Anik Ghosh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-watch": "^7.0.0",
+    "nodemon": "^2.0.4"
+  }
+}
