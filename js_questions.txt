@@ -1,0 +1,10 @@
+- What is closure in JavaScript and give an example of its usage?
+- How does inheritance work in JavaScript?
+- Explain event bubbling and capturing in JavaScript.
+- What is a callback function in JavaScript and how is it used?
+- How would you implement a simple queue data structure in JavaScript?
+- What is the difference between == and === in JavaScript?
+- How would you implement a deep copy of an object in JavaScript?
+- What is hoisting in JavaScript and how does it work?
+- What is the difference between let and var in JavaScript?
+- How would you implement a simple debouncing function in JavaScript?
